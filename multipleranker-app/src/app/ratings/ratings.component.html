@@ -1,0 +1,8 @@
+<div>
+    <h2>{{ratings.name}}</h2>
+    <h4>{{ratings.createdBy}}</h4>
+    <div *ngFor="let ratingBoard of ratings.ratingBoards">
+        <app-rating-board
+        [ratingBoard] = "ratingBoard"></app-rating-board>
+    </div>
+</div>

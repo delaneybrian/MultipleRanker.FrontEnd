@@ -1,0 +1,10 @@
+<div>
+    <hr/>
+    <p>{{ratingBoard.name}}</p>
+    <p>{{ratingBoard.type}}</p>
+    <div *ngFor="let participantRating of ratingBoard.participantRatings">
+        <app-participant-rating
+        [participantRating] = "participantRating"></app-participant-rating>
+    </div>
+    <hr/>
+</div>
